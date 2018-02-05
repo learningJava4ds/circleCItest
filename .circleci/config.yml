@@ -1,0 +1,15 @@
+version: 2
+
+jobs:
+  builds:
+    docker:
+      - image: circleci/python:3.6.2
+dependencies:
+  pre:
+    - pip install pytest requests
+test:
+  environment:
+    PYTHONPATH: $PWD
+  pre:
+    - "pytest tests/app_test.py"
+
