@@ -1,11 +1,11 @@
 def greeter(func):
-    print("Hello, " + func())
+    return "Hello, " + func()
 
 def getName():
     return input("What is your name?\n")
 
 def main():
-    greeter(getName)
+    print(greeter(getName))
 
 if __name__ == "__main__":
     main()

@@ -1,0 +1,10 @@
+machine:
+  python:
+    version: 3.6.2
+dependencies:
+  pre:
+    - pip install pytest requests
+test:
+  pre:
+    - pytest tests/app_test.py
+
