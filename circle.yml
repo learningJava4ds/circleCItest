@@ -7,4 +7,6 @@ dependencies:
 test:
   pre:
     - pytest tests/app_test.py
+          environment:
+            PYTHONPATH: $PWD
 
